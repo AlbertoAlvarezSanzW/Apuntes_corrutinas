@@ -5,6 +5,9 @@ import kotlinx.coroutines.runBlocking
 
 fun main() {
     println("Empiezo main2")
+    // el runblocking cancela la ejecucion del siguiente codigo hasta que se hayan lanzado todo lo de dentro
+    // pero si se lanzan corrutina desde dentro del runblocking NO esperaras a que esas corrutinas acaben
+
     runBlocking {
         println("Entro en el blocking")
         println("Lanzo corrutina1")
